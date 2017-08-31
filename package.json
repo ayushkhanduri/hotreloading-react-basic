@@ -17,10 +17,7 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-hot-loader": "^1.3.1",
-<<<<<<< HEAD
     "react-router": "^4.2.0",
-=======
->>>>>>> 3f8e28bfdb7df8fc10c32ca9ffc4762f6e80a655
     "webpack": "^3.5.5",
     "webpack-dev-middleware": "^1.12.0",
     "webpack-hot-middleware": "^2.18.2"
