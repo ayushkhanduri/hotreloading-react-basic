@@ -1,18 +1,24 @@
 import React from 'react';
+import {Provider} from 'react-redux';
 import { Router,Route} from 'react-router';
 
 import createBrowserHistory from 'history/createBrowserHistory';
 
-import AppLayout from './App.layout';
+import initialState from '../config/initState.config';
+import configureState from '../config/store.config';
 
-import LoginContainer from  '../components/Login/LoginContainer.component';
+import Home from  '../components/Login/AllContainer.component';
 
 const browserHistory = new createBrowserHistory();
 
 const AppRouter = () => (
-    <Router history={browserHistory}>
-        <Route path="/" component= {LoginContainer}/>
-    </Router>
+	<Provider store= {configureState({initialState})}>
+		<Router history={browserHistory}>
+			<div>
+				<Route exact path="/" component={Home}/>
+			</div>
+		</Router>
+	</Provider>
 
 );
 
